@@ -1,4 +1,5 @@
 {
     "message": "Hello world!",
-    "about": "About"
+    "about": "About",
+    "aboutTitle": "Welcome to About page"
 }

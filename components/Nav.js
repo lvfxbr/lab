@@ -36,30 +36,40 @@ export default function Nav() {
 
     return (
         <nav>
-            <li>Current locale: {currentLocale}</li>
-            <li>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-
-                <TLink text={t("about")} />
-            </li>
-            <li>
-                <select
-                    onChange={handleChangeLocale}
-                    value={currentLocaleOption.value}
-                >
-                    <option value={currentLocaleOption.value} disabled>
-                        {currentLocaleOption.label}
-                    </option>
-
-                    {locales.map((locale) => (
-                        <option key={locale.value} value={locale.value}>
-                            {locale.label}
+            <ul>
+                <li>Current locale: {currentLocale}</li>
+                <li>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        href="/[about]"
+                        query={{ about: t("about").toLowerCase() }}
+                        as={`/${t("about").toLowerCase()}`}
+                    >
+                        <a>{t("about")}</a>
+                    </Link>
+                    <TLink text={t("about")} />
+                </li>
+                <li>
+                    <select
+                        onChange={handleChangeLocale}
+                        value={currentLocaleOption.value}
+                    >
+                        <option value={currentLocaleOption.value} disabled>
+                            {currentLocaleOption.label}
                         </option>
-                    ))}
-                </select>
-            </li>
+
+                        {locales.map((locale) => (
+                            <option key={locale.value} value={locale.value}>
+                                {locale.label}
+                            </option>
+                        ))}
+                    </select>
+                </li>
+            </ul>
         </nav>
     );
 }
