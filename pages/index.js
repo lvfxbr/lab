@@ -15,7 +15,7 @@ export default function Home() {
         <div className={styles.container}>
             <p>Current locale: {router.locale}</p>
             <p>{t("message")}</p>
-            <Link href="/" locale={router.locale === "ptbr" ? "en" : "ptbr"}>
+            <Link href="/" locale={router.locale === "pt-br" ? "en" : "pt-br"}>
                 <button>Switch locale</button>
             </Link>
         </div>
