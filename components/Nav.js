@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Link from "next/link";
 import TLink from "./TLink";
@@ -73,11 +72,3 @@ export default function Nav() {
         </nav>
     );
 }
-
-export const getStaticProps = async ({ locale }) => {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ["common"])),
-        },
-    };
-};
