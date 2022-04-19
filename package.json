@@ -1,0 +1,13 @@
+{
+  "name": "sync-directory-1",
+  "version": "0.1.0",
+  "author": "Lucas Vendramini <98402608+lvfxbr@users.noreply.github.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "sync": "node index.js",
+    "restore": "git checkout ."
+  },
+  "dependencies": {
+    "sync-directory": "4.0.12"
+  }
+}
