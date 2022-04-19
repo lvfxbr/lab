@@ -174,10 +174,10 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-sync-directory@4.0.12:
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/sync-directory/-/sync-directory-4.0.12.tgz#a45d77a33c2ca309c6dbb5f664232f729deab852"
-  integrity sha512-ZpBeMXL60flA1jbuhNJoCE6EjzInjTuoh6f7cArruYwQ9V8DEZNzN9FI3Q9CkWz4VzF4IvcKG38xLO1rZaysow==
+sync-directory@^4.0.14:
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/sync-directory/-/sync-directory-4.0.14.tgz#618ae4e1175f43299927ba630e3de5cbe40c7b95"
+  integrity sha512-wjlRoggEHeOlOIKxlZ/Em2iFs4jsGShvRBS7+s17UxYtsaAN4+lGxDwexVLRsqTT8Oj7d9Y3uWLRgLagH6gwbw==
   dependencies:
     chokidar "^3.3.1"
     commander "^6.2.0"

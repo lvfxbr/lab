@@ -8,6 +8,6 @@
     "restore": "git checkout ."
   },
   "dependencies": {
-    "sync-directory": "4.0.12"
+    "sync-directory": "^4.0.14"
   }
 }
