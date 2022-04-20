@@ -3,22 +3,18 @@ const syncDirectory = require("sync-directory");
 const duration = 60 * 1000;
 
 function doSync() {
-
-    console.log('Do sync...');
+    console.log("Do sync...");
 
     syncDirectory.sync(path.resolve("a"), path.resolve("b"), {
         deleteOrphaned: true,
         exclude: [".git", "node_modules"],
-        chokidarWatchOptions: {
-            persistent: false,
-        },
         type: "copy",
         onError(err) {
             throw err;
         },
     });
 
-    console.log('Sync done!');
+    console.log("Sync done!");
 }
 
 doSync();
