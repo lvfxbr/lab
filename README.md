@@ -2,7 +2,7 @@
 
 ## Description
 
-The purpose of this issue is fix the possible error proposed in https://github.com/motdotla/dotenv-expand/issues/74.
+The purpose of this issue is fix the possible error proposed in https://github.com/motdotla/dotenv-expand/issues/76.
 
 ## How to reproduce the problem
 
