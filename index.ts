@@ -3,7 +3,7 @@ import dotenvExpand from "dotenv-expand";
 
 const dotenvConfig = dotenv.config();
 
-dotenvExpand(dotenvConfig);
+dotenvExpand.expand(dotenvConfig);
 
 console.log({
     mongoDatabase: process.env.MONGO_DATABASE,
